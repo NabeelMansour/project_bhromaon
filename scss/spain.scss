@@ -1,0 +1,86 @@
+/*
+============ 
+spain pool 
+============
+*/
+
+.spain-pool{
+  font-family: $josefinFont;
+  background-image: url('../assets/spain.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 700px;
+}
+
+.spain-pool-content{
+    max-width: 543px;
+    min-height: 374px;
+    background: #232323;
+    color: #fff;
+    padding: 30px;
+  
+  .spain {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    margin-top: 30px;
+  }
+
+  .spain-pool-content p:nth-of-type(2) {
+    line-height: 26px;
+  }
+
+  h3{
+    padding: 20px 0;
+  }
+
+  a{
+    display: inline-block;
+  }
+}
+
+/*
+============ 
+spain ocean 
+============
+*/
+
+.spain-ocean{
+  background: url('../assets/spain2.jpg');
+  font-family: $josefinFont;
+  min-height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.spain-ocean-content{
+    max-width: 543px;
+    min-height: 374px;
+    background: #232323;
+    color: #fff;
+    padding: 30px;
+  
+  .spain {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    margin-top: 30px;
+  }
+
+  .spain-ocean-content p:nth-of-type(2) {
+    line-height: 26px;
+  }
+
+  h3{
+    padding: 20px 0;
+  }
+
+  a{
+    display: inline-block;
+  }
+}
+

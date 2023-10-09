@@ -1,6 +1,12 @@
-@media screen and (max-width: 600px) {
-  .hamburger {
+
+
+@media screen and (max-width: 576px) {
+
+  .header {
     position: relative;
+  }
+
+  .hamburger {
     display: block;
     width: 35px;
     cursor: pointer;
@@ -8,8 +14,9 @@
     background: none;
     outline: none;
     border: none;
-    left: 85%;
-
+    margin-left: auto;
+    margin-right: 1rem;
+    padding-top: 1rem;
   }
 
   .bar {
@@ -40,39 +47,77 @@
     opacity: 0;
   }
 
-  .mobile-nav {
+   .nav-list {
     position: relative;
-    top: 0;
-    left: 100%;
+    right: 100%;
     width: 100%;
-    min-height: 100vh;
+    min-height: 600px;
     display: block;
-    padding-top: 120px;
     z-index: 98;
     transition: 0.4s;
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 5rem;
+    font-family: $aleoFont;
   }
 
-  .mobile-nav.is-active{
-    left: 0;
+  .nav-list.is-active {
+    right: 20%;
   }
 
-  .mobile-nav a {
+  .nav-list li a {
     display: block;
     width: 100%;
     max-width: 200px;
-    margin: 0 auto 16px;
+    margin: 0 200px 16px;
     text-align: center;
     padding: 12px 16px;
     background-color: white;
     color: #000;
+    z-index: 2;
+    border-radius: 2px;
   }
 
-  .mobile-nav a:hover {
+  .navbar-text{
+    display: none;
+  }
+
+  .nav-list li a:hover,
+  .navbar-text:hover {
     background: #000;
     color: #fff;
   }
+}
 
-  .nav-list{
-    display: none;
+
+@media screen and (min-width: 576px) {
+  .navbar {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $skyblueColor;
+  color: #fff;
+  padding: 1rem;
+  
+
+    .nav-list{
+      display: flex;
+      justify-content: space-between;
+
+      li a{
+        color: #fff;
+        padding-right: 1.5rem;
+        font-family: $aleoFont;
+        font-size: 14px;
+      }
+    }
+
+  .navbar-text{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    font-family: $josefinFont;
   }
+}
 }

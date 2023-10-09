@@ -1,0 +1,45 @@
+.tourist {
+  background-image: url('../assets/tourist.jpg');
+  min-height: 731px;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .tourist-content h3 {
+    font-family: $aleoFont;
+    padding: 30px 0;
+  }
+
+  .tourist-content h4 {
+    font-family: $josefinFont;
+    padding: 30px 0;
+  }
+
+  .sumon p {
+    padding: 0 20px;
+    font-family: $josefinFont;
+    margin-top: 0;
+  }
+
+  .sumon h4 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .sumon blockquote:before {
+    content: open-quote;
+    color: $skyblueColor;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .sumon blockquote:before,
+  blockquote:after {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 4em;
+    top: 0.5em;
+    position: relative;
+  }
+}

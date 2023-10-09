@@ -1,4 +1,4 @@
-$skyblueColor: #5474FD;
+
 
 .header{
   background-image: url('../assets/image_1.png');
@@ -6,8 +6,17 @@ $skyblueColor: #5474FD;
   background-position: center;
   background-size: cover;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: $josefinFont;
   position: relative;
+  min-height: 620px;
+
+  .header-banner{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    
 
   h1, p{
     color: #fff;
@@ -17,47 +26,57 @@ $skyblueColor: #5474FD;
     margin-bottom: 0;
     padding-top: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: .1rem;
+    letter-spacing: 4.8px;
   }
 
-  p{
+  .header-text{
     margin-top: 0;
     margin-bottom: 28px;
     text-transform: capitalize;
     font-size: 12px;
+    max-width: 280px;
+    width: 100%;
+    letter-spacing: 6.82px;
   }
+}
 
   input[type="text"]{
-    padding: 0.3rem 1.4rem;
+    padding: .6rem;
     border: none;
+    width: 100%;
   }
 
   input::placeholder{
     font-size: 9px;
   }
 
+  .header-input{
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+  }
+
   .search-btn{
-    position: absolute;
-    right: 3rem;
-    top: 6.45rem;
-    outline: none;
-    border: none;
-    padding: 0.55rem;
+    border: 1px solid #fff;
+    padding: 0.55rem 1.5rem;
     background: $skyblueColor;
     color: #fff;
     text-transform: uppercase;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .fa-magnifying-glass{
-    padding-left: 0.1rem;
+    padding-left: 0.4rem;
   }
 
   .header-scroll-content{
     font-size: 12px;
     margin-top: 1.5rem;
-    padding-bottom: 2rem;
-    cursor: pointer;
+    padding-top: 3rem;
   }
 
   .header-scroll{
@@ -66,6 +85,16 @@ $skyblueColor: #5474FD;
 
   .header-arrow .fa-chevron-down{
     margin-top: 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .header {
+    position: relative;
+
     
   }
+  
 }

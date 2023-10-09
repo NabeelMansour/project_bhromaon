@@ -1,0 +1,73 @@
+.choose{
+  background-image: url('../assets/Rectangle\ 41444.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 585px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .choose-images img{
+    max-width: 350px;
+    width: 100%;
+    max-height: 220px;
+  }
+
+  .mountain{
+    display: block;
+  }
+
+  h2{
+    margin: 20px 0 ;
+    color: #fff;
+    font-family: $aleoFont;
+    font-weight: 400;
+  }
+
+  .btn-explore{
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .choose-text{
+    max-width: 420px;
+    width: 100%;
+    min-height: 158px;
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 50px;
+    font-family: $josefinFont;
+
+    p:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .choose-images{
+      max-width: 90vw;
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      img{
+        transition: all 0.4s linear;
+      }
+    }
+    .choose-images img:hover{
+        transform: scale(1.1);
+      }
+  }
+}

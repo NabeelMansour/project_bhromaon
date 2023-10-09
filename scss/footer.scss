@@ -1,0 +1,34 @@
+.footer{
+  background: #232323;
+  min-height: 171px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .footer-first-text{
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3.3px;
+  }
+
+  .footer-second-text{
+    color: #fff;
+    line-height: 26px;
+    font-family: $josefinFont;
+  }
+
+  .social-media{
+    padding-top: 20px;
+  }
+
+  .fa-brands{
+    letter-spacing: 5px;
+    cursor: pointer;
+  }
+
+  .fa-brands:hover{
+   color: $skyblueColor !important;
+}
+}

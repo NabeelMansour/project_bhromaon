@@ -1,12 +1,35 @@
+$skyblueColor: #5474FD;
+$josefinFont: 'Josefin Sans', sans-serif;
+$aleoFont: 'Aleo', serif;
+
 @import 'header';
 @import 'nav';
+@import 'section-choose';
+@import 'places';
+@import 'spain';
+@import 'tourist';
+@import 'footer';
 
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.btn {
+  background: #5474FD;
+  padding: 14px 16px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #fff;
+  color: $skyblueColor;
 }
