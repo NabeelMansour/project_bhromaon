@@ -1,0 +1,71 @@
+$skyblueColor: #5474FD;
+
+.header{
+  background-image: url('../assets/image_1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
+  h1, p{
+    color: #fff;
+  }
+
+  h1{
+    margin-bottom: 0;
+    padding-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+  }
+
+  p{
+    margin-top: 0;
+    margin-bottom: 28px;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+
+  input[type="text"]{
+    padding: 0.3rem 1.4rem;
+    border: none;
+  }
+
+  input::placeholder{
+    font-size: 9px;
+  }
+
+  .search-btn{
+    position: absolute;
+    right: 3rem;
+    top: 6.45rem;
+    outline: none;
+    border: none;
+    padding: 0.55rem;
+    background: $skyblueColor;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+  }
+
+  .fa-magnifying-glass{
+    padding-left: 0.1rem;
+  }
+
+  .header-scroll-content{
+    font-size: 12px;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  .header-scroll{
+    margin-bottom: 0;
+  }
+
+  .header-arrow .fa-chevron-down{
+    margin-top: 0;
+    
+  }
+}
