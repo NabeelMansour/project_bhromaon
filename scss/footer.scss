@@ -1,34 +1,47 @@
-.footer{
+.footer {
   background: #232323;
   min-height: 171px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
-  .footer-first-text{
+  .footer-first-text {
     font-size: 1.5rem;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 3.3px;
   }
 
-  .footer-second-text{
+  .footer-second-text {
     color: #fff;
     line-height: 26px;
     font-family: $josefinFont;
   }
 
-  .social-media{
+  .social-media {
     padding-top: 20px;
   }
 
-  .fa-brands{
+  .fa-brands {
     letter-spacing: 5px;
     cursor: pointer;
   }
 
-  .fa-brands:hover{
-   color: $skyblueColor !important;
-}
+  .fa-brands:hover {
+    color: $skyblueColor !important;
+  }
+
+  .arrow-up {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.4rem;
+    position: fixed;
+    bottom: 0;
+    right: 7rem;
+  }
+
+  .fa-chevron-up {
+    font-size: 50px;
+  }
 }

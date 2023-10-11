@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-32x32.png" />
-    <link rel="manifest" href="https://startling-wisp-5fec4a.netlify.app/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="manifest"
+      href="https://startling-wisp-5fec4a.netlify.app/favicon-16x16.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -44,12 +57,14 @@
 
         <div class="header-scroll-content">
           <p class="header-scroll">scroll down</p>
-          <span class="header-arrow" id="#choose-us">
-            <i class="fa-solid fa-chevron-down" style="color: #ffffff"></i>
+          <span class="header-arrow">
+            <a href="#choose-us"
+              ><i class="fa-solid fa-chevron-down" style="color: #ffffff"></i
+            ></a>
           </span>
         </div>
       </div>
-      <nav class="navbar wrapper">
+      <nav class="navbar">
         <p class="navbar-text">bhromaon</p>
         <ul class="nav-list" id="nav-list">
           <li><a href="#">who we are</a></li>
@@ -64,7 +79,7 @@
 
     <!-- end of navbar -->
     <!-- choose section -->
-    <section class="choose wrapper" id="choose-us">
+    <section class="choose wrapper">
       <article class="choose-content">
         <h2>Why Choose Us</h2>
         <div class="choose-text">
@@ -82,17 +97,26 @@
         <button class="btn btn-explore">explore places</button>
       </article>
       <article class="choose-images">
-        <img src="./assets/Image1_small.png" alt="house at a river" />
-        <img src="./assets/Image2.png" alt="blue sky" class="mountain" />
+        <img
+          src="./assets/Image1_small.png"
+          alt="house at a river"
+          class="choose-images-river"
+        />
+        <img
+          src="./assets/Image2.png"
+          alt="blue sky"
+          class="choose-images-mountain"
+        />
       </article>
     </section>
     <!-- end of choose section -->
     <!-- places section -->
     <section class="places wrapper">
+
       <div class="places-icons icons">
-        <img src="./assets/gray.png" class="gray" alt="" />
+        <img src="./assets/gray.svg" class="gray" alt="two bowed arrows" />
         <div class="places-icons-search icons">
-          <img src="./assets/magnify.png" alt="magnify" />
+          <img src="./assets/magnify.png" alt="magnify" class="magnify" />
           <p>Search Places</p>
         </div>
         <div class="places-icons-select icons">
@@ -104,10 +128,11 @@
           <p>Search Places</p>
         </div>
       </div>
+
     </section>
     <!-- end of places section -->
     <!-- spain pool -->
-    <section class="spain-pool wrapper">
+    <section class="spain-pool wrapper" id="choose-us">
       <article class="spain-pool-content">
         <p class="spain">Spain</p>
         <h3>GRAND SPAIN MADRID</h3>
@@ -163,6 +188,9 @@
         <i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i>
         <i class="fa-brands fa-youtube" style="color: #ffffff"></i>
         <i class="fa-brands fa-pinterest" style="color: #ffffff"></i>
+      </div>
+      <div class="arrow-up">
+        <i class="fa-solid fa-chevron-up" style="color: #ffffff"></i>
       </div>
     </footer>
     <!-- end of footer -->

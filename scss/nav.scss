@@ -99,11 +99,13 @@
   background: $skyblueColor;
   color: #fff;
   padding: 1rem;
+  width: 100%;
   
 
     .nav-list{
       display: flex;
       justify-content: space-between;
+
 
       li a{
         color: #fff;

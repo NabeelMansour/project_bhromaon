@@ -7,7 +7,7 @@
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   position: relative;
-  min-height: 620px;
+  min-height: 820px;
 }
 .header .header-banner {
   position: absolute;
@@ -164,6 +164,7 @@
     background: #5474FD;
     color: #fff;
     padding: 1rem;
+    width: 100%;
   }
   .navbar .nav-list {
     display: flex;
@@ -187,18 +188,26 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 585px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .choose .choose-images img {
-  max-width: 350px;
-  width: 100%;
-  max-height: 220px;
-}
-.choose .mountain {
+  max-width: 330px;
   display: block;
+}
+.choose .choose-images {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.choose .choose-images-river {
+  grid-column: 1/11;
+  grid-row: 2/2;
+}
+.choose .choose-images-mountain {
+  grid-column: 3/12;
+  grid-row: 3/4;
 }
 .choose h2 {
   margin: 20px 0;
@@ -249,12 +258,21 @@
 }
 .places {
   background: #333333;
+  position: relative;
 }
 .places .places-icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   min-height: 300px;
+}
+.places .places-icons .gray {
+  color: #fff;
+  max-width: 657px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  opacity: 0.5;
 }
 .places .places-icons-search,
 .places .places-icons-select,
@@ -263,6 +281,10 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+.places .places-icons-select {
+  z-index: 2;
+  background: #333333;
 }
 .places .places-icons p {
   font-family: "Aleo", serif;
@@ -278,14 +300,10 @@
   .places-icons {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 100vw;
+    border: 2px solid red;
   }
-  .places-icons .icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .places-icons .magnify {
+    margin-top: 0;
   }
   .places-icons img {
     display: block;
@@ -296,6 +314,15 @@
   }
   .places-icons p {
     margin: 20px 0;
+  }
+  .gray {
+    visibility: hidden;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 /*
@@ -419,6 +446,7 @@ spain ocean
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .footer .footer-first-text {
   font-size: 1.5rem;
@@ -440,6 +468,16 @@ spain ocean
 }
 .footer .fa-brands:hover {
   color: #5474FD !important;
+}
+.footer .arrow-up {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.4rem;
+  position: fixed;
+  bottom: 0;
+  right: 7rem;
+}
+.footer .fa-chevron-up {
+  font-size: 50px;
 }
 
 * {

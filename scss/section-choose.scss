@@ -3,20 +3,32 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 585px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   .choose-images img{
-    max-width: 350px;
-    width: 100%;
-    max-height: 220px;
-  }
-
-  .mountain{
+    max-width: 330px;
     display: block;
   }
+
+  .choose-images{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .choose-images-river{
+    grid-column: 1/11;
+    grid-row: 2/2;
+  }
+
+  .choose-images-mountain{
+    grid-column: 3/12;
+    grid-row: 3/4;
+  }
+
+
 
   h2{
     margin: 20px 0 ;
